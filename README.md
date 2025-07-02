@@ -6,19 +6,4 @@ This project implements a **quantum Sudoku solver** for a simplified 2x2 Sudoku 
 
 * `sudoku_grover.py` — Main circuit construction and oracle logic.
 * `run_sudoku.py` — Example usage and simulation.
-
-## Usage
-
-Run the Python script or import the functions to:
-
-```python
-from sudoku_grover import build_grover_sudoku_2x2
-from qiskit.quantum_info import Statevector
-
-qc = build_grover_sudoku_2x2(iterations=1)
-state = Statevector.from_instruction(qc)
-probs = state.probabilities()
-print(probs)
-```
-
-Adjust `iterations` to tune Grover amplification steps.
+* Adjust `iterations` to tune Grover amplification steps.
